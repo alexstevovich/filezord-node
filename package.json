@@ -1,0 +1,62 @@
+{
+  "name": "filezord",
+  "version": "1.1.0",
+  "description": "Merges files into a single aggregated string or file. Includes a programmatic SDK and CLI",
+  "bin": {
+    "filezord": "src/cli.js"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts",
+    "./src/"
+  ],
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Alex Stevovich",
+    "email": "alex.stevovich@gmail.com",
+    "url": "https://alexstevovich.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexstevovich/filezord-node.git"
+  },
+  "scripts": {
+    "test": "npx vitest --run",
+    "setup": "node ./scripts/setup.js",
+    "build": "node ./scripts/build.js",
+    "stage": "node ./scripts/stage.js",
+    "deploy": "node ./scripts/stage.js --publish",
+    "commit": "node ./scripts/commit.js",
+    "commit-main": "node ./scripts/commit-main.js"
+  },
+  "keywords": [
+    "merge",
+    "files",
+    "llm",
+    "codebase",
+    "cli",
+    "tooling",
+    "developer-tools",
+    "documentation",
+    "project-export",
+    "nodejs"
+  ],
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "ignore": "^7.0.3"
+  },
+  "devDependencies": {
+    "demi-archive": "^0.0.0",
+    "demi-cmd": "^0.0.0",
+    "demi-fs": "^0.0.0",
+    "demi-nodepkg": "^0.0.0",
+    "demi-obj": "^0.0.0",
+    "eslint": "^9.22.0",
+    "filezord": "^1.0.3",
+    "prettier": "^3.5.3",
+    "shipmast": "^0.0.2",
+    "vitest": "^3.0.8"
+  }
+}
